@@ -9,6 +9,7 @@
 #include "Q14.cpp"
 #include "Q15.cpp"
 #include "Q16.cpp"
+#include "Q20.cpp"
 
 using namespace std;
 
@@ -155,6 +156,19 @@ int main()
     
     book.setAuthor("Changed Author");
     cout << book.toString() << endl;
+    cout << spacer;
+    
+    // Question 20:
+    cout << "Question 20:\n";
+    MemoryMangagement mm = MemoryMangagement();
+    cout << "Malloc: ";
+    cout << "\nRealloc: ";
+    mm.doRealloc();
+    cout << "\nCalloc: ";
+    mm.doCalloc();
+    cout << "\nFree: ";
+    mm.doFree();
+    cout << spacer;
 }
 
 
